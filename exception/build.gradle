@@ -26,3 +26,8 @@ test {
 tasks.withType(JavaCompile) {
     options.encoding("UTF-8")
 }
+
+repositories {
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenCentral()
+}
